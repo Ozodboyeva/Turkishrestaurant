@@ -1,0 +1,89 @@
+.dishes {
+  padding: 100px 0px;
+  background: #f8f8f8;
+  .popular__dishes-header {
+    margin-bottom: 40px;
+    color: var.$primary-color;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: Cera Round Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.44px;
+    text-transform: capitalize;
+    @media (max-width: 1100px) {
+      font-size: 45px;
+    }
+    @media (max-width: 1000px) {
+      font-size: 40px;
+    }
+    @media (max-width: 800px) {
+      font-size: 35px;
+    }
+  }
+  .popular__dishes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+    }
+
+    .popular__dish {
+      padding: 20px;
+      border-radius: 14px;
+      background: var.$secondary-color;
+      &-images img {
+        width: 100%;
+      }
+      &-header {
+        margin-top: 10px;
+        width: 100%;
+        color: #242424;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .popular__dish-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      &-num {
+        margin-top: 20px;
+        color: var.$primary-color;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  }
+}
+.news__header {
+  color: #242424;
+  text-align: center;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Cera Round Pro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 83.2px */
+  letter-spacing: 1.92px;
+  text-transform: capitalize;
+}

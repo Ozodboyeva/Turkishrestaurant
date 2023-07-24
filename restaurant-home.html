@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EatTurkish restaurant-about</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/restaurant-home.min.css" />
+    <link rel="stylesheet" href="./venders/bootstrap.min.css" />
+  </head>
+  <!--navigation--bar-->
+  <body>
+    <a id="backtop" href="#">
+      <img src="./images/backtop.svg" alt="backtop" />
+    </a>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/header-images/logo.svg" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler ic-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-grow-0"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./restaurant-home.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <button class="btn-1 mx-3 rounded-5 px-4" type="submit">
+              <a href="contact.html" class="text-light text-decoration-none"
+                >Contact</a
+              >
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--navigation--bar-->
+    <main>
+      <section class="menu">
+        <div class="container">
+          <div class="home__href">
+            <a href="./index.html">Home</a><span>|</span
+            ><a class="act" href="./contact.html">Menu</a>
+          </div>
+          <div class="menu__style">
+            <h2 class="menu__style-head">Our Regular Menu Pack</h2>
+            <div class="d-flex align-items-start item">
+              <div
+                class="nav flex-column nav-pills me-3"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="menu-href nav-link active"
+                  id="v-pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-home"
+                  aria-selected="true"
+                >
+                  All
+                </button>
+                <button
+                  class="menu-href nav-link"
+                  id="v-pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-profile"
+                  aria-selected="false"
+                >
+                  KEBABS
+                </button>
+                <button
+                  class="menu-href nav-link"
+                  id="v-pills-disabled-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-disabled"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-disabled"
+                  aria-selected="false"
+                >
+                  OTHER DISHES
+                </button>
+                <button
+                  class="menu-href nav-link"
+                  id="v-pills-messages-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                >
+                  SIDES
+                </button>
+                <button
+                  class="menu-href nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  DRINKS
+                </button>
+                <button
+                  class="menu-href nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  DESSERTS
+                </button>
+                <button
+                  class="menu-href nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  MEAL DEALS
+                </button>
+              </div>
+              <div class="tab-content" id="v-pills-tabContent ">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-disabled"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-disabled-tab"
+                  tabindex="0"
+                >
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/home-images/klipartizshashlik.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-messages"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab"
+                  tabindex="0"
+                >
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-settings"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab"
+                  tabindex="0"
+                >
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__dishes">
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__dish">
+                      <div class="popular__dish-images">
+                        <img
+                          src="./images/restaurant-home-images/kliparts.png"
+                          alt="shashlik"
+                        />
+                        <div class="popular__dish-texts">
+                          <h4 class="popular__dish-header">
+                            Barbecue Shish kebab Shashlik Skewer
+                          </h4>
+                          <h5 class="popular__dish-num">$12.00</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter">
+            <h3 class="newsletter__head">Newsletter</h3>
+            <h2 class="newsletter__head-header">Subscribe to Our Newsletter</h2>
+            <p class="newsletter__head-part">And never miss latest Updates!</p>
+            <div class="newsletter__btn">
+              <input type="email" placeholder="Email Address" />
+              <button type="button" class="sub">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__items">
+          <div class="footer__item">
+            <h1 class="footer__header">Contact Us</h1>
+            <p class="footer__paragraph">9 W 53rd St, London, NY 10019, UK</p>
+            <p class="footer__link">
+              <a href="#">+1 212-344-1230 +1 212-555-1230 </a>
+            </p>
+          </div>
+          <div class="footer__item">
+            <img
+              class="footer__img"
+              src="./images/header-images/image 2.svg"
+              alt="logo"
+            />
+            <p class="footer__paragraphs">
+              "The best way to find yourself is to lose yourself in the service
+              of others.”
+            </p>
+            <div class="footer__icons">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M15.1194 5.32003H16.9994V2.14003C16.0891 2.04538 15.1745 1.99865 14.2594 2.00003C11.5394 2.00003 9.67938 3.66003 9.67938 6.70003V9.32003H6.60938V12.88H9.67938V22H13.3594V12.88H16.4194L16.8794 9.32003H13.3594V7.05003C13.3594 6.00003 13.6394 5.32003 15.1194 5.32003Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M22.9924 3.94923C22.9925 3.7726 22.9458 3.59909 22.8571 3.44637C22.7683 3.29366 22.6407 3.1672 22.4871 3.07986C22.3336 2.99253 22.1597 2.94744 21.983 2.94919C21.8064 2.95095 21.6334 2.99948 21.4816 3.08985C20.8963 3.43823 20.2662 3.70503 19.6086 3.88285C18.6696 3.07708 17.472 2.63615 16.2347 2.64066C14.8772 2.64222 13.5735 3.17125 12.5989 4.11604C11.6242 5.06083 11.0548 6.34742 11.011 7.70414C8.335 7.2774 5.90965 5.88066 4.19747 3.78028C4.09431 3.65511 3.96256 3.55659 3.81333 3.49303C3.6641 3.42946 3.50178 3.40271 3.34005 3.41503C3.17841 3.42834 3.02244 3.48082 2.88564 3.56794C2.74884 3.65506 2.63532 3.77419 2.55489 3.91503C2.14242 4.63484 1.90552 5.44179 1.86344 6.27034C1.82136 7.09889 1.97528 7.92568 2.3127 8.68358L2.31075 8.68553C2.1591 8.77893 2.03394 8.90969 1.94725 9.06528C1.86057 9.22087 1.81525 9.3961 1.81563 9.57421C1.81379 9.72114 1.82261 9.86801 1.842 10.0137C1.94414 11.2719 2.50178 12.4497 3.41036 13.3262C3.34872 13.4436 3.3111 13.5721 3.2997 13.7042C3.2883 13.8364 3.30334 13.9694 3.34395 14.0957C3.74006 15.3298 4.58245 16.3718 5.70626 17.0176C4.5645 17.4591 3.33168 17.613 2.11641 17.4658C1.89148 17.4376 1.66364 17.4866 1.47026 17.6049C1.27688 17.7232 1.12944 17.9037 1.05212 18.1168C0.974813 18.3299 0.97222 18.563 1.04477 18.7777C1.11732 18.9925 1.26071 19.1762 1.45141 19.2988C3.5415 20.645 5.97509 21.3607 8.46118 21.3604C11.2804 21.3921 14.0311 20.4912 16.2854 18.7978C18.5397 17.1044 20.1711 14.7135 20.926 11.997C21.2791 10.8137 21.4593 9.5855 21.4612 8.35059C21.4612 8.28516 21.4612 8.21778 21.4602 8.1504C21.9823 7.58733 22.3868 6.9257 22.6499 6.2043C22.913 5.48289 23.0294 4.71622 22.9924 3.94923ZM19.6857 7.16114C19.5206 7.35648 19.437 7.60794 19.4523 7.86329C19.4621 8.02829 19.4611 8.19429 19.4611 8.35059C19.4591 9.39413 19.3061 10.4319 19.007 11.4316C18.3905 13.743 17.0162 15.7807 15.1041 17.2182C13.192 18.6558 10.8529 19.4101 8.46118 19.3604C7.60206 19.3606 6.7459 19.2597 5.9104 19.0596C6.97581 18.7162 7.97199 18.1869 8.85278 17.4961C9.01501 17.3684 9.13373 17.1936 9.19267 16.9957C9.2516 16.7978 9.24786 16.5865 9.18195 16.3908C9.11605 16.1952 8.99121 16.0247 8.82456 15.9028C8.65791 15.7809 8.45762 15.7135 8.25118 15.71C7.42001 15.697 6.62631 15.362 6.03731 14.7754C6.18673 14.7471 6.33517 14.7119 6.48263 14.6699C6.69864 14.6084 6.88767 14.476 7.01929 14.2941C7.15091 14.1121 7.21745 13.8911 7.2082 13.6667C7.19896 13.4423 7.11446 13.2275 6.96831 13.057C6.82217 12.8865 6.62289 12.7701 6.40255 12.7266C5.92009 12.6313 5.4661 12.426 5.07586 12.1268C4.68563 11.8275 4.36967 11.4422 4.15255 11.001C4.33328 11.0256 4.51516 11.041 4.69747 11.0469C4.91405 11.0502 5.12606 10.9845 5.30285 10.8593C5.47963 10.7341 5.61202 10.556 5.68087 10.3506C5.74685 10.1434 5.74345 9.92025 5.6712 9.71512C5.59894 9.50999 5.46177 9.33401 5.28048 9.21387C4.84063 8.92084 4.48032 8.52329 4.23184 8.05683C3.98335 7.59036 3.85444 7.06955 3.85665 6.54103C3.85665 6.47463 3.8586 6.40822 3.86251 6.34279C6.10377 8.43304 9.01083 9.66524 12.0715 9.82228C12.226 9.82837 12.3799 9.79927 12.5215 9.73718C12.6631 9.67509 12.7887 9.58164 12.8889 9.46388C12.9881 9.34498 13.0583 9.20469 13.0941 9.05404C13.1298 8.90339 13.1301 8.7465 13.0949 8.59572C13.0377 8.35708 13.0085 8.11259 13.008 7.8672C13.0089 7.01173 13.3491 6.19157 13.954 5.58667C14.5589 4.98176 15.3791 4.64153 16.2346 4.64063C16.6747 4.63945 17.1103 4.72953 17.5139 4.90518C17.9174 5.08082 18.2802 5.33823 18.5793 5.66114C18.6946 5.78522 18.8398 5.87773 19.001 5.92987C19.1622 5.98202 19.334 5.99205 19.5002 5.95903C19.911 5.87909 20.3159 5.77142 20.7121 5.63677C20.4418 6.18974 20.0964 6.70272 19.6857 7.16114Z"
+                  fill="white"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M17.34 5.46C17.1027 5.46 16.8707 5.53038 16.6733 5.66224C16.476 5.79409 16.3222 5.98151 16.2313 6.20078C16.1405 6.42005 16.1168 6.66133 16.1631 6.89411C16.2094 7.12689 16.3236 7.34071 16.4915 7.50853C16.6593 7.67635 16.8731 7.79064 17.1059 7.83694C17.3387 7.88324 17.5799 7.85948 17.7992 7.76866C18.0185 7.67783 18.2059 7.52402 18.3378 7.32668C18.4696 7.12935 18.54 6.89734 18.54 6.66C18.54 6.34174 18.4136 6.03652 18.1885 5.81147C17.9635 5.58643 17.6583 5.46 17.34 5.46ZM21.94 7.88C21.9206 7.0503 21.7652 6.2294 21.48 5.45C21.2257 4.78313 20.83 4.17928 20.32 3.68C19.8248 3.16743 19.2196 2.77418 18.55 2.53C17.7727 2.23616 16.9508 2.07721 16.12 2.06C15.06 2 14.72 2 12 2C9.28 2 8.94 2 7.88 2.06C7.04915 2.07721 6.22734 2.23616 5.45 2.53C4.78168 2.77665 4.17693 3.16956 3.68 3.68C3.16743 4.17518 2.77418 4.78044 2.53 5.45C2.23616 6.22734 2.07721 7.04915 2.06 7.88C2 8.94 2 9.28 2 12C2 14.72 2 15.06 2.06 16.12C2.07721 16.9508 2.23616 17.7727 2.53 18.55C2.77418 19.2196 3.16743 19.8248 3.68 20.32C4.17693 20.8304 4.78168 21.2234 5.45 21.47C6.22734 21.7638 7.04915 21.9228 7.88 21.94C8.94 22 9.28 22 12 22C14.72 22 15.06 22 16.12 21.94C16.9508 21.9228 17.7727 21.7638 18.55 21.47C19.2196 21.2258 19.8248 20.8326 20.32 20.32C20.8322 19.8226 21.2283 19.2182 21.48 18.55C21.7652 17.7706 21.9206 16.9497 21.94 16.12C21.94 15.06 22 14.72 22 12C22 9.28 22 8.94 21.94 7.88ZM20.14 16C20.1327 16.6348 20.0178 17.2637 19.8 17.86C19.6403 18.2952 19.3839 18.6884 19.05 19.01C18.7256 19.3405 18.3332 19.5964 17.9 19.76C17.3037 19.9778 16.6748 20.0927 16.04 20.1C15.04 20.15 14.67 20.16 12.04 20.16C9.41 20.16 9.04 20.16 8.04 20.1C7.38089 20.1123 6.72459 20.0109 6.1 19.8C5.68578 19.6281 5.31136 19.3728 5 19.05C4.66809 18.7287 4.41484 18.3352 4.26 17.9C4.01586 17.2952 3.88044 16.6519 3.86 16C3.86 15 3.8 14.63 3.8 12C3.8 9.37 3.8 9 3.86 8C3.86448 7.35106 3.98295 6.70795 4.21 6.1C4.38605 5.67791 4.65627 5.30166 5 5C5.30381 4.65617 5.67929 4.3831 6.1 4.2C6.70955 3.98004 7.352 3.86508 8 3.86C9 3.86 9.37 3.8 12 3.8C14.63 3.8 15 3.8 16 3.86C16.6348 3.86728 17.2637 3.98225 17.86 4.2C18.3144 4.36865 18.7223 4.64285 19.05 5C19.3777 5.30718 19.6338 5.68273 19.8 6.1C20.0223 6.70893 20.1373 7.35178 20.14 8C20.19 9 20.2 9.37 20.2 12C20.2 14.63 20.19 15 20.14 16ZM12 6.87C10.9858 6.87198 9.99496 7.17453 9.15265 7.73942C8.31035 8.30431 7.65438 9.1062 7.26763 10.0438C6.88089 10.9813 6.78072 12.0125 6.97979 13.0069C7.17886 14.0014 7.66824 14.9145 8.38608 15.631C9.10392 16.3474 10.018 16.835 11.0129 17.0321C12.0077 17.2293 13.0387 17.1271 13.9755 16.7385C14.9123 16.35 15.7129 15.6924 16.2761 14.849C16.8394 14.0056 17.14 13.0142 17.14 12C17.1413 11.3251 17.0092 10.6566 16.7512 10.033C16.4933 9.40931 16.1146 8.84281 15.6369 8.36605C15.1592 7.88929 14.5919 7.51168 13.9678 7.25493C13.3436 6.99818 12.6749 6.86736 12 6.87ZM12 15.33C11.3414 15.33 10.6976 15.1347 10.15 14.7688C9.60234 14.4029 9.17552 13.8828 8.92348 13.2743C8.67144 12.6659 8.6055 11.9963 8.73398 11.3503C8.86247 10.7044 9.17963 10.111 9.64533 9.64533C10.111 9.17963 10.7044 8.86247 11.3503 8.73398C11.9963 8.6055 12.6659 8.67144 13.2743 8.92348C13.8828 9.17552 14.4029 9.60234 14.7688 10.15C15.1347 10.6976 15.33 11.3414 15.33 12C15.33 12.4373 15.2439 12.8703 15.0765 13.2743C14.9092 13.6784 14.6639 14.0454 14.3547 14.3547C14.0454 14.6639 13.6784 14.9092 13.2743 15.0765C12.8703 15.2439 12.4373 15.33 12 15.33Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h1 class="footer__header">Working Hours</h1>
+            <p class="footer__par">Monday-Friday: 08:00 am -12:00 am</p>
+            <p class="footer__par">Saturday-Sunday: 07:00am -11:00 pm</p>
+          </div>
+        </div>
+        <h4 class="footer__reser">2022 Pop online. All Rights reserved.</h4>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
